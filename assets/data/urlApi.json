@@ -1,0 +1,65 @@
+{
+    "_url" : "http://localhost:3300/MENU",
+    "_header" : [
+        {
+            "key": "Content-Type",
+            "value": "application/json"
+        },
+        {
+            "key": "Authorization",
+            "beaderKey": "CRMCOMERCIAL"
+        }
+    ],
+    "_item": [
+        {
+            "name": "User",
+            "endPoint": "user"
+        },
+        {
+            "name": "Menu",
+            "request": [
+                {
+                    "name" : "getMenuUser",
+                    "description" : "Optiene el menu del usuario logeado",
+                    "method" : "GET",
+                    "url" : "/menuUser/",
+                    "parameter" :  true,
+                    "sendObject" : false
+                },
+                {
+                    "name" : "getMenus",
+                    "description" : "Optiene el menu del usuario logeado",
+                    "method" : "GET",
+                    "url" : "/",
+                    "parameter" :  false,
+                    "sendObject" : false
+                },
+                {
+                    "name" : "postMenu",
+                    "description" : "Guardar un objeto menu",
+                    "method" : "POST",
+                    "url" : "/",
+                    "parameter" :  false,
+                    "sendObject" : true
+                },
+                {
+                    "name" : "updateMenu",
+                    "description" : "Actualizar un objeto menu",
+                    "method" : "PUT",
+                    "url" : "/",
+                    "parameter" :  true,
+                    "sendObject" : false
+                },
+                {
+                    "name" : "deleteMenu",
+                    "description" : "Dar de baja un objeto menu",
+                    "method" : "DELETE",
+                    "url" : "/",
+                    "parameter" :  true,
+                    "sendObject" : false
+                }
+            ]
+            
+        }
+    ]
+  }
